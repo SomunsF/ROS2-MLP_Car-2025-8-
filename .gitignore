@@ -1,162 +1,26 @@
-# ROS2 build artifacts
+# ROS2 build artifacts (exclude these)
 build/
 install/
 log/
 
-# Colcon ignore files
-COLCON_IGNORE
-
 # Python bytecode
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
+*.pyc
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-*.manifest
-*.spec
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# IDE and editor files
-.vscode/
+# IDE files to exclude (especially the large database file)
+.vscode/browse.vc.db*
+.vscode/browse.vc.db-shm
+.vscode/browse.vc.db-wal
 .idea/
-*.swp
-*.swo
-*~
-.project
-.cproject
-.pydevproject
-.settings/
 
-# OS generated files
+# OS files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
 # Temporary files
 *.tmp
-*.temp
 *.log
 *.bak
-*.orig
 
-# ROS specific
-devel/
-devel_isolated/
-logs/
-
-# Gazebo
-*.pid
-
-# Machine learning models (keep only essential ones)
-*.pt
-*.pth
-*.ckpt
-*.pkl
-*.h5
-*.hdf5
-
-# Data files (usually large)
-*.bag
-*.db3
-*.mcap
-
-# Allow specific folders and their contents
-!end-end_train/
-!end-end_train/**
-!maps/
-!maps/**
-!maps-1/
-!maps-1/**
-!maps-2/
-!maps-2/**
-
-# Compiled C/C++
-*.o
-*.so
-*.dylib
-*.dll
-*.exe
-*.out
-*.app
-
-# CMake
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-*.cmake
-!CMakeLists.txt
-
-# Generated documentation
-doc/
-docs/_build/
-
-# Local configuration files
-*.local
-
-# Keep essential files (override above patterns if needed)
-!src/
-!launch/
-!config/
-!urdf/
-!rviz/
-!meshes/
-!maps/
-!scripts/
-!CMakeLists.txt
-!package.xml
-!*.md
-!*.txt
-!*.yaml
-!*.yml
-!*.xml
-!*.launch.py
-!*.py
-!*.cpp
-!*.hpp
-!*.h
-!*.c
-!*.sh
+# Everything else is included by default
+# The four folders we want to upload: end-end_train/, maps/, maps-1/, maps-2/, src/
