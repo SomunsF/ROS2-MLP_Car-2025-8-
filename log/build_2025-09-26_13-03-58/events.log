@@ -1,0 +1,314 @@
+[0.000000] (-) TimerEvent: {}
+[0.000198] (car_mapping) JobQueued: {'identifier': 'car_mapping', 'dependencies': OrderedDict()}
+[0.000321] (car_nav) JobQueued: {'identifier': 'car_nav', 'dependencies': OrderedDict()}
+[0.000342] (car_mapping) JobStarted: {'identifier': 'car_mapping'}
+[0.004076] (car_nav) JobStarted: {'identifier': 'car_nav'}
+[0.007971] (car_mapping) JobProgress: {'identifier': 'car_mapping', 'progress': 'cmake'}
+[0.008289] (car_mapping) JobProgress: {'identifier': 'car_mapping', 'progress': 'build'}
+[0.008845] (car_mapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zzz/ros2_car/ros2/build/car_mapping', '--', '-j12', '-l12'], 'cwd': '/home/zzz/ros2_car/ros2/build/car_mapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'zzz'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzz/ros2_car/ros2/install/car_nav/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zzz'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zzz/.nvm/versions/node/v22.18.0/bin'), ('NVM_INC', '/home/zzz/.nvm/versions/node/v22.18.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2025'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2192'), ('BUNDLED_DEBUGPY_PATH', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4627'), ('NVM_DIR', '/home/zzz/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzz'), ('JOURNAL_STREAM', '8:19674'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/zzz/.local/bin:/opt/ros/humble/bin:/home/zzz/.nvm/versions/node/v22.18.0/bin:/home/zzz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/zzz/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/zzz:@/tmp/.ICE-unix/2162,unix/zzz:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', '9c415c7272df4335887656cb05193e1d'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d6c42d5eb143b6ef.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zzz/.config/Code/User/workspaceStorage/f7b234d5b03c33d991b2d9b8304077b7/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NNLRD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2f4539fd90.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzz/ros2_car/ros2/build/car_mapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble')]), 'shell': False}
+[0.011307] (car_nav) JobProgress: {'identifier': 'car_nav', 'progress': 'cmake'}
+[0.011680] (car_nav) JobProgress: {'identifier': 'car_nav', 'progress': 'build'}
+[0.011971] (car_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zzz/ros2_car/ros2/build/car_nav', '--', '-j12', '-l12'], 'cwd': '/home/zzz/ros2_car/ros2/build/car_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'zzz'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzz/ros2_car/ros2/install/car_nav/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zzz'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zzz/.nvm/versions/node/v22.18.0/bin'), ('NVM_INC', '/home/zzz/.nvm/versions/node/v22.18.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2025'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2192'), ('BUNDLED_DEBUGPY_PATH', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4627'), ('NVM_DIR', '/home/zzz/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzz'), ('JOURNAL_STREAM', '8:19674'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/zzz/.local/bin:/opt/ros/humble/bin:/home/zzz/.nvm/versions/node/v22.18.0/bin:/home/zzz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/zzz/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/zzz:@/tmp/.ICE-unix/2162,unix/zzz:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', '9c415c7272df4335887656cb05193e1d'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d6c42d5eb143b6ef.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zzz/.config/Code/User/workspaceStorage/f7b234d5b03c33d991b2d9b8304077b7/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NNLRD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2f4539fd90.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzz/ros2_car/ros2/build/car_nav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble')]), 'shell': False}
+[0.042032] (car_mapping) CommandEnded: {'returncode': 0}
+[0.042628] (car_mapping) JobProgress: {'identifier': 'car_mapping', 'progress': 'install'}
+[0.051184] (car_mapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zzz/ros2_car/ros2/build/car_mapping'], 'cwd': '/home/zzz/ros2_car/ros2/build/car_mapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'zzz'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzz/ros2_car/ros2/install/car_nav/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zzz'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zzz/.nvm/versions/node/v22.18.0/bin'), ('NVM_INC', '/home/zzz/.nvm/versions/node/v22.18.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2025'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2192'), ('BUNDLED_DEBUGPY_PATH', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4627'), ('NVM_DIR', '/home/zzz/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzz'), ('JOURNAL_STREAM', '8:19674'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/zzz/.local/bin:/opt/ros/humble/bin:/home/zzz/.nvm/versions/node/v22.18.0/bin:/home/zzz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/zzz/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/zzz:@/tmp/.ICE-unix/2162,unix/zzz:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', '9c415c7272df4335887656cb05193e1d'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d6c42d5eb143b6ef.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zzz/.config/Code/User/workspaceStorage/f7b234d5b03c33d991b2d9b8304077b7/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NNLRD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2f4539fd90.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzz/ros2_car/ros2/build/car_mapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble')]), 'shell': False}
+[0.057245] (car_mapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.057427] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//launch\n'}
+[0.057497] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//launch/mapping.launch.py\n'}
+[0.057544] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//rviz\n'}
+[0.057619] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//rviz/mapping.rviz\n'}
+[0.057661] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//urdf\n'}
+[0.057715] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//urdf/car_robot.urdf\n'}
+[0.057762] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//config\n'}
+[0.057836] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping//config/nav2_params.yaml\n'}
+[0.057873] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/lib/car_mapping/odom_bridge.py\n'}
+[0.057935] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/ament_index/resource_index/package_run_dependencies/car_mapping\n'}
+[0.057974] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/ament_index/resource_index/parent_prefix_path/car_mapping\n'}
+[0.058016] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/environment/ament_prefix_path.sh\n'}
+[0.058052] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/environment/ament_prefix_path.dsv\n'}
+[0.058098] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/environment/path.sh\n'}
+[0.058143] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/environment/path.dsv\n'}
+[0.058169] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/local_setup.bash\n'}
+[0.058194] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/local_setup.sh\n'}
+[0.058219] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/local_setup.zsh\n'}
+[0.058246] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/local_setup.dsv\n'}
+[0.058272] (car_mapping) StdoutLine: {'line': b'-- Installing: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/package.dsv\n'}
+[0.058298] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/ament_index/resource_index/packages/car_mapping\n'}
+[0.058324] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/cmake/car_mappingConfig.cmake\n'}
+[0.058350] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/cmake/car_mappingConfig-version.cmake\n'}
+[0.058377] (car_mapping) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_mapping/share/car_mapping/package.xml\n'}
+[0.059670] (car_mapping) CommandEnded: {'returncode': 0}
+[0.068440] (car_mapping) JobEnded: {'identifier': 'car_mapping', 'rc': 0}
+[0.091022] (car_nav) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/zzzplan.dir/planner_config/plan.cpp.o\x1b[0m\n'}
+[0.099235] (-) TimerEvent: {}
+[0.199503] (-) TimerEvent: {}
+[0.299831] (-) TimerEvent: {}
+[0.400124] (-) TimerEvent: {}
+[0.500423] (-) TimerEvent: {}
+[0.600730] (-) TimerEvent: {}
+[0.701027] (-) TimerEvent: {}
+[0.801350] (-) TimerEvent: {}
+[0.901625] (-) TimerEvent: {}
+[1.001924] (-) TimerEvent: {}
+[1.102224] (-) TimerEvent: {}
+[1.202521] (-) TimerEvent: {}
+[1.302819] (-) TimerEvent: {}
+[1.403112] (-) TimerEvent: {}
+[1.503414] (-) TimerEvent: {}
+[1.603819] (-) TimerEvent: {}
+[1.704158] (-) TimerEvent: {}
+[1.804541] (-) TimerEvent: {}
+[1.904887] (-) TimerEvent: {}
+[2.005227] (-) TimerEvent: {}
+[2.105551] (-) TimerEvent: {}
+[2.205868] (-) TimerEvent: {}
+[2.306198] (-) TimerEvent: {}
+[2.406513] (-) TimerEvent: {}
+[2.506890] (-) TimerEvent: {}
+[2.607259] (-) TimerEvent: {}
+[2.707640] (-) TimerEvent: {}
+[2.807998] (-) TimerEvent: {}
+[2.908330] (-) TimerEvent: {}
+[3.008633] (-) TimerEvent: {}
+[3.108967] (-) TimerEvent: {}
+[3.209307] (-) TimerEvent: {}
+[3.309659] (-) TimerEvent: {}
+[3.410010] (-) TimerEvent: {}
+[3.510388] (-) TimerEvent: {}
+[3.610743] (-) TimerEvent: {}
+[3.711106] (-) TimerEvent: {}
+[3.811468] (-) TimerEvent: {}
+[3.911901] (-) TimerEvent: {}
+[4.012233] (-) TimerEvent: {}
+[4.112662] (-) TimerEvent: {}
+[4.213035] (-) TimerEvent: {}
+[4.313433] (-) TimerEvent: {}
+[4.413890] (-) TimerEvent: {}
+[4.514209] (-) TimerEvent: {}
+[4.614514] (-) TimerEvent: {}
+[4.714795] (-) TimerEvent: {}
+[4.815088] (-) TimerEvent: {}
+[4.915367] (-) TimerEvent: {}
+[5.015621] (-) TimerEvent: {}
+[5.115899] (-) TimerEvent: {}
+[5.216158] (-) TimerEvent: {}
+[5.316418] (-) TimerEvent: {}
+[5.416691] (-) TimerEvent: {}
+[5.516958] (-) TimerEvent: {}
+[5.617260] (-) TimerEvent: {}
+[5.717524] (-) TimerEvent: {}
+[5.817791] (-) TimerEvent: {}
+[5.918058] (-) TimerEvent: {}
+[6.018324] (-) TimerEvent: {}
+[6.118607] (-) TimerEvent: {}
+[6.218921] (-) TimerEvent: {}
+[6.319226] (-) TimerEvent: {}
+[6.419491] (-) TimerEvent: {}
+[6.519766] (-) TimerEvent: {}
+[6.620054] (-) TimerEvent: {}
+[6.720332] (-) TimerEvent: {}
+[6.820628] (-) TimerEvent: {}
+[6.920945] (-) TimerEvent: {}
+[7.021250] (-) TimerEvent: {}
+[7.121519] (-) TimerEvent: {}
+[7.221795] (-) TimerEvent: {}
+[7.322113] (-) TimerEvent: {}
+[7.422456] (-) TimerEvent: {}
+[7.522795] (-) TimerEvent: {}
+[7.623106] (-) TimerEvent: {}
+[7.723433] (-) TimerEvent: {}
+[7.823757] (-) TimerEvent: {}
+[7.924073] (-) TimerEvent: {}
+[8.024391] (-) TimerEvent: {}
+[8.124632] (-) TimerEvent: {}
+[8.224939] (-) TimerEvent: {}
+[8.325275] (-) TimerEvent: {}
+[8.425645] (-) TimerEvent: {}
+[8.525975] (-) TimerEvent: {}
+[8.626277] (-) TimerEvent: {}
+[8.726588] (-) TimerEvent: {}
+[8.826882] (-) TimerEvent: {}
+[8.927142] (-) TimerEvent: {}
+[9.027458] (-) TimerEvent: {}
+[9.127811] (-) TimerEvent: {}
+[9.228130] (-) TimerEvent: {}
+[9.328447] (-) TimerEvent: {}
+[9.428812] (-) TimerEvent: {}
+[9.529138] (-) TimerEvent: {}
+[9.629452] (-) TimerEvent: {}
+[9.729778] (-) TimerEvent: {}
+[9.830089] (-) TimerEvent: {}
+[9.930428] (-) TimerEvent: {}
+[10.030828] (-) TimerEvent: {}
+[10.131189] (-) TimerEvent: {}
+[10.231472] (-) TimerEvent: {}
+[10.331839] (-) TimerEvent: {}
+[10.432198] (-) TimerEvent: {}
+[10.532528] (-) TimerEvent: {}
+[10.632857] (-) TimerEvent: {}
+[10.733173] (-) TimerEvent: {}
+[10.833506] (-) TimerEvent: {}
+[10.933843] (-) TimerEvent: {}
+[11.034160] (-) TimerEvent: {}
+[11.134485] (-) TimerEvent: {}
+[11.234800] (-) TimerEvent: {}
+[11.335139] (-) TimerEvent: {}
+[11.435456] (-) TimerEvent: {}
+[11.535779] (-) TimerEvent: {}
+[11.636632] (-) TimerEvent: {}
+[11.736955] (-) TimerEvent: {}
+[11.837261] (-) TimerEvent: {}
+[11.937641] (-) TimerEvent: {}
+[12.038011] (-) TimerEvent: {}
+[12.138348] (-) TimerEvent: {}
+[12.238692] (-) TimerEvent: {}
+[12.339034] (-) TimerEvent: {}
+[12.439383] (-) TimerEvent: {}
+[12.539741] (-) TimerEvent: {}
+[12.640092] (-) TimerEvent: {}
+[12.740430] (-) TimerEvent: {}
+[12.840820] (-) TimerEvent: {}
+[12.941194] (-) TimerEvent: {}
+[13.041581] (-) TimerEvent: {}
+[13.141958] (-) TimerEvent: {}
+[13.242332] (-) TimerEvent: {}
+[13.342662] (-) TimerEvent: {}
+[13.442997] (-) TimerEvent: {}
+[13.543267] (-) TimerEvent: {}
+[13.643631] (-) TimerEvent: {}
+[13.744004] (-) TimerEvent: {}
+[13.844368] (-) TimerEvent: {}
+[13.944719] (-) TimerEvent: {}
+[14.045039] (-) TimerEvent: {}
+[14.145353] (-) TimerEvent: {}
+[14.245631] (-) TimerEvent: {}
+[14.345947] (-) TimerEvent: {}
+[14.446257] (-) TimerEvent: {}
+[14.546573] (-) TimerEvent: {}
+[14.646975] (-) TimerEvent: {}
+[14.747329] (-) TimerEvent: {}
+[14.847631] (-) TimerEvent: {}
+[14.947990] (-) TimerEvent: {}
+[15.048360] (-) TimerEvent: {}
+[15.148739] (-) TimerEvent: {}
+[15.249160] (-) TimerEvent: {}
+[15.349618] (-) TimerEvent: {}
+[15.450114] (-) TimerEvent: {}
+[15.550601] (-) TimerEvent: {}
+[15.651010] (-) TimerEvent: {}
+[15.751328] (-) TimerEvent: {}
+[15.851649] (-) TimerEvent: {}
+[15.952012] (-) TimerEvent: {}
+[16.052299] (-) TimerEvent: {}
+[16.152567] (-) TimerEvent: {}
+[16.252848] (-) TimerEvent: {}
+[16.353162] (-) TimerEvent: {}
+[16.453465] (-) TimerEvent: {}
+[16.553759] (-) TimerEvent: {}
+[16.654021] (-) TimerEvent: {}
+[16.754286] (-) TimerEvent: {}
+[16.854538] (-) TimerEvent: {}
+[16.954863] (-) TimerEvent: {}
+[17.055182] (-) TimerEvent: {}
+[17.155477] (-) TimerEvent: {}
+[17.255782] (-) TimerEvent: {}
+[17.356073] (-) TimerEvent: {}
+[17.456370] (-) TimerEvent: {}
+[17.556643] (-) TimerEvent: {}
+[17.656996] (-) TimerEvent: {}
+[17.757368] (-) TimerEvent: {}
+[17.857630] (-) TimerEvent: {}
+[17.957921] (-) TimerEvent: {}
+[18.058228] (-) TimerEvent: {}
+[18.158526] (-) TimerEvent: {}
+[18.258835] (-) TimerEvent: {}
+[18.359111] (-) TimerEvent: {}
+[18.459360] (-) TimerEvent: {}
+[18.559622] (-) TimerEvent: {}
+[18.659987] (-) TimerEvent: {}
+[18.760388] (-) TimerEvent: {}
+[18.860629] (-) TimerEvent: {}
+[18.960993] (-) TimerEvent: {}
+[19.061430] (-) TimerEvent: {}
+[19.161739] (-) TimerEvent: {}
+[19.262047] (-) TimerEvent: {}
+[19.362356] (-) TimerEvent: {}
+[19.462629] (-) TimerEvent: {}
+[19.562946] (-) TimerEvent: {}
+[19.663310] (-) TimerEvent: {}
+[19.763654] (-) TimerEvent: {}
+[19.863960] (-) TimerEvent: {}
+[19.964235] (-) TimerEvent: {}
+[20.015413] (car_nav) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libzzzplan.so\x1b[0m\n'}
+[20.064359] (-) TimerEvent: {}
+[20.164672] (-) TimerEvent: {}
+[20.264979] (-) TimerEvent: {}
+[20.365294] (-) TimerEvent: {}
+[20.465619] (-) TimerEvent: {}
+[20.565907] (-) TimerEvent: {}
+[20.666227] (-) TimerEvent: {}
+[20.766529] (-) TimerEvent: {}
+[20.866864] (-) TimerEvent: {}
+[20.946059] (car_nav) StdoutLine: {'line': b'[100%] Built target zzzplan\n'}
+[20.955144] (car_nav) CommandEnded: {'returncode': 0}
+[20.955632] (car_nav) JobProgress: {'identifier': 'car_nav', 'progress': 'install'}
+[20.955920] (car_nav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zzz/ros2_car/ros2/build/car_nav'], 'cwd': '/home/zzz/ros2_car/ros2/build/car_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'zzz'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzz/ros2_car/ros2/install/car_nav/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zzz'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zzz/.nvm/versions/node/v22.18.0/bin'), ('NVM_INC', '/home/zzz/.nvm/versions/node/v22.18.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2025'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2192'), ('BUNDLED_DEBUGPY_PATH', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4627'), ('NVM_DIR', '/home/zzz/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzz'), ('JOURNAL_STREAM', '8:19674'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/zzz/.local/bin:/opt/ros/humble/bin:/home/zzz/.nvm/versions/node/v22.18.0/bin:/home/zzz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/zzz/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/zzz:@/tmp/.ICE-unix/2162,unix/zzz:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', '9c415c7272df4335887656cb05193e1d'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zzz/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d6c42d5eb143b6ef.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zzz/.config/Code/User/workspaceStorage/f7b234d5b03c33d991b2d9b8304077b7/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NNLRD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2f4539fd90.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzz/ros2_car/ros2/build/car_nav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zzz/ros2_car/ros2/install/car_nav:/home/zzz/ros2_car/ros2/install/car_mapping:/opt/ros/humble')]), 'shell': False}
+[20.963330] (car_nav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.963509] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/planner_config/plan.xml\n'}
+[20.963599] (car_nav) StdoutLine: {'line': b'-- Installing: /home/zzz/ros2_car/ros2/install/car_nav/lib/libzzzplan.so\n'}
+[20.966925] (-) TimerEvent: {}
+[20.974478] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/include/car_nav/planner_config/plan.hpp\n'}
+[20.974745] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/planner_config/plan.xml\n'}
+[20.974828] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/launch\n'}
+[20.974951] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/launch/mapping.launch.py\n'}
+[20.975144] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/rviz\n'}
+[20.975292] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/rviz/mapping.rviz\n'}
+[20.975421] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/urdf\n'}
+[20.975475] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/urdf/car.urdf\n'}
+[20.975524] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config\n'}
+[20.975578] (car_nav) StdoutLine: {'line': b'-- Installing: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/nav2_params.yaml\n'}
+[20.975611] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/carto_mapping.lua\n'}
+[20.975713] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/study_params.yaml\n'}
+[20.975776] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/carto_localization.lua\n'}
+[20.975827] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/study_bt_navigator.xml\n'}
+[20.975869] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes\n'}
+[20.975937] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/imu_Link.STL\n'}
+[20.975970] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/jq1_Link.STL\n'}
+[20.976020] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/yq_Link.STL\n'}
+[20.976050] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/zq_Link.STL\n'}
+[20.976096] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/jq2_Link.STL\n'}
+[20.976151] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/laser_Link.STL\n'}
+[20.976196] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/zh_Link.STL\n'}
+[20.976241] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/base_link.STL\n'}
+[20.976285] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/yh_Link.STL\n'}
+[20.976315] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/meshes/laser_Link3x.STL\n'}
+[20.976350] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/maps-1\n'}
+[20.976390] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/maps-1/my_map.pgm\n'}
+[20.976431] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/maps-1/my_map.yaml\n'}
+[20.976467] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/maps\n'}
+[20.976512] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/maps/room.yaml\n'}
+[20.976547] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/maps/room.pgm\n'}
+[20.976593] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/lib/car_nav/odom_bridge.py\n'}
+[20.976641] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/lib/car_nav/steering_from_odom.py\n'}
+[20.976679] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/lib/car_nav/wheels_from_odom.py\n'}
+[20.976716] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/ament_index/resource_index/package_run_dependencies/car_nav\n'}
+[20.976745] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/ament_index/resource_index/parent_prefix_path/car_nav\n'}
+[20.976772] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/environment/ament_prefix_path.sh\n'}
+[20.976800] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/environment/ament_prefix_path.dsv\n'}
+[20.976831] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/environment/path.sh\n'}
+[20.976867] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/environment/path.dsv\n'}
+[20.976903] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/local_setup.bash\n'}
+[20.976939] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/local_setup.sh\n'}
+[20.976988] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/local_setup.zsh\n'}
+[20.977026] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/local_setup.dsv\n'}
+[20.977061] (car_nav) StdoutLine: {'line': b'-- Installing: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/package.dsv\n'}
+[20.977095] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/ament_index/resource_index/packages/car_nav\n'}
+[20.977131] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/ament_index/resource_index/nav2_core__pluginlib__plugin/car_nav\n'}
+[20.977158] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.977183] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.977208] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/cmake/car_navConfig.cmake\n'}
+[20.977235] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/cmake/car_navConfig-version.cmake\n'}
+[20.977261] (car_nav) StdoutLine: {'line': b'-- Up-to-date: /home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/package.xml\n'}
+[20.978484] (car_nav) CommandEnded: {'returncode': 0}
+[20.987022] (car_nav) JobEnded: {'identifier': 'car_nav', 'rc': 0}
+[20.987465] (-) EventReactorShutdown: {}

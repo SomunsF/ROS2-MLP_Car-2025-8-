@@ -1,0 +1,61 @@
+
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <RecoveryNode number_of_retries="6" name="NavigateRecovery">
+      <PipelineSequence name="NavigateWithReplanning"><!-- 一直每个节点都tick直到最后的节点成功。 -->
+        <RecoveryNode number_of_retries="3" name="ComputePathToPose"> <!-- 增加规划重试次数 -->
+          <ComputePathToPose goal="{goal}" path="{path}" planner_id="zzz"/>
+          <ReactiveFallback name="ComputePathToPoseRecoveryFallback"><!-- 有一个节点成功，就马上返回成功。全部失败就返回失败。有running节点每次tick都会tick这个节点 -->
+            <GoalUpdated/>
+            <Sequence name="ClearAndWait">
+              <ClearEntireCostmap name="ClearGlobalCostmap-Context" service_name="global_costmap/clear_entirely_global_costmap"/>
+              <ClearEntireCostmap name="ClearLocalCostmap-Context" service_name="local_costmap/clear_entirely_local_costmap"/>
+              <Wait wait_duration="1"/><!-- 清除后等待1秒让传感器更新 -->
+            </Sequence>
+          </ReactiveFallback>
+        </RecoveryNode>
+        <RecoveryNode number_of_retries="3" name="FollowPath">
+          <!-- 使用Rotation Shim Controller自动处理预旋转+端到端控制 -->
+          <FollowPath path="{path}" controller_id="RotationShimController" server_timeout="1000"/>
+          <ReactiveFallback name="FollowPathRecoveryFallback">
+            <GoalUpdated/>
+            <Sequence name="RecoveryActions">
+              <ClearEntireCostmap name="ClearLocalCostmap-FollowPath" service_name="local_costmap/clear_entirely_local_costmap"/>
+              <Wait wait_duration="0.5"/><!-- 等待传感器更新 -->
+            </Sequence>
+          </ReactiveFallback>
+        </RecoveryNode>
+      </PipelineSequence>
+      <ReactiveFallback name="RecoveryFallback">
+        <GoalUpdated/>
+        <RoundRobin name="RecoveryActions"><!-- 每个节点都tick，直到有一个成功。每次tick都会从下一个开始tick -->
+          <Sequence name="ClearingActions">
+            <ClearEntireCostmap name="ClearLocalCostmap-Subtree" service_name="local_costmap/clear_entirely_local_costmap"/>
+            <ClearEntireCostmap name="ClearGlobalCostmap-Subtree" service_name="global_costmap/clear_entirely_global_costmap"/>
+            <Wait wait_duration="2"/><!-- 清除后等待更长时间 -->
+          </Sequence>
+          <Sequence name="SpinRecovery">
+            <Spin spin_dist="1.57"/><!-- 旋转90度而不是45度 -->
+            <Wait wait_duration="1"/><!-- 旋转后等待 -->
+          </Sequence>
+          <Sequence name="BackupRecovery">
+            <BackUp backup_dist="0.30" backup_speed="0.03"/><!-- 增加后退距离，降低速度 -->
+            <Wait wait_duration="1"/><!-- 后退后等待 -->
+          </Sequence>
+          <Sequence name="SmallSpin">
+            <Spin spin_dist="0.39"/><!-- 小角度旋转(22.5度) -->
+            <Wait wait_duration="0.5"/>
+          </Sequence>
+          <Wait wait_duration="5"/><!-- 增加等待时间 -->
+          <Sequence name="DriveSlowly">
+            <DriveOnHeading speed="0.05" time_allowance="1.0"/><!-- 非常慢速前进更长时间 -->
+            <Wait wait_duration="1"/>
+          </Sequence>
+        </RoundRobin>
+      </ReactiveFallback>
+    </RecoveryNode>
+  </BehaviorTree>
+</root>
+<!-- NonblockingSequence 不会堵塞在running，而是继续往下走tick下一个。 -->
+<!-- PersistentSequence 会记住上次成功的节点，下次tick时从失败节点开始tick -->
+<!-- Follow Dynamic Point 动态终点。短期会跟着上个终点的规划走，不断加入终点路径，更为平滑不会停顿 -->

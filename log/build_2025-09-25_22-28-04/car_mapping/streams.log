@@ -1,0 +1,33 @@
+[0.006s] Invoking command in '/home/zzz/ros2_car/ros2/build/car_mapping': /usr/bin/cmake /home/zzz/ros2_car/ros2/src/car_mapping -DCMAKE_INSTALL_PREFIX=/home/zzz/ros2_car/ros2/install/car_mapping
+[0.061s] -- The C compiler identification is GNU 11.4.0
+[0.102s] -- The CXX compiler identification is GNU 11.4.0
+[0.107s] -- Detecting C compiler ABI info
+[0.156s] -- Detecting C compiler ABI info - done
+[0.160s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.160s] -- Detecting C compile features
+[0.160s] -- Detecting C compile features - done
+[0.162s] -- Detecting CXX compiler ABI info
+[0.221s] -- Detecting CXX compiler ABI info - done
+[0.225s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.226s] -- Detecting CXX compile features
+[0.226s] -- Detecting CXX compile features - done
+[0.235s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[0.235s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.235s]   has asked CMake to find a package configuration file provided by
+[0.235s]   "ament_cmake", but CMake did not find one.
+[0.235s] 
+[0.235s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.235s]   any of the following names:
+[0.235s] 
+[0.235s]     ament_cmakeConfig.cmake
+[0.235s]     ament_cmake-config.cmake
+[0.235s] 
+[0.235s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.235s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.235s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.235s]   has been installed.
+[0.235s] 
+[0.235s] [0m
+[0.235s] -- Configuring incomplete, errors occurred!
+[0.235s] See also "/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/CMakeOutput.log".
+[0.239s] Invoked command in '/home/zzz/ros2_car/ros2/build/car_mapping' returned '1': /usr/bin/cmake /home/zzz/ros2_car/ros2/src/car_mapping -DCMAKE_INSTALL_PREFIX=/home/zzz/ros2_car/ros2/install/car_mapping
