@@ -1,6 +1,0 @@
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_mapping': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzz/ros2_car/ros2/src/car_mapping -DCMAKE_INSTALL_PREFIX=/home/zzz/ros2_car/ros2/install/car_mapping
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_mapping' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzz/ros2_car/ros2/src/car_mapping -DCMAKE_INSTALL_PREFIX=/home/zzz/ros2_car/ros2/install/car_mapping
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_mapping': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzz/ros2_car/ros2/build/car_mapping -- -j12 -l12
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_mapping' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzz/ros2_car/ros2/build/car_mapping -- -j12 -l12
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_mapping': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zzz/ros2_car/ros2/build/car_mapping
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_mapping' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zzz/ros2_car/ros2/build/car_mapping

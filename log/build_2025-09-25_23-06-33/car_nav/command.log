@@ -1,4 +1,0 @@
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_nav': /usr/bin/cmake --build /home/zzz/ros2_car/ros2/build/car_nav -- -j12 -l12
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_nav' returned '0': /usr/bin/cmake --build /home/zzz/ros2_car/ros2/build/car_nav -- -j12 -l12
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_nav': /usr/bin/cmake --install /home/zzz/ros2_car/ros2/build/car_nav
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_nav' returned '0': /usr/bin/cmake --install /home/zzz/ros2_car/ros2/build/car_nav

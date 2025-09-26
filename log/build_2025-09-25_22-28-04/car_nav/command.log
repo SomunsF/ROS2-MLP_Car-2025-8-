@@ -1,2 +1,0 @@
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_nav': /usr/bin/cmake /home/zzz/ros2_car/ros2/src/car_nav -DCMAKE_INSTALL_PREFIX=/home/zzz/ros2_car/ros2/install/car_nav
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_nav' returned '1': /usr/bin/cmake /home/zzz/ros2_car/ros2/src/car_nav -DCMAKE_INSTALL_PREFIX=/home/zzz/ros2_car/ros2/install/car_nav

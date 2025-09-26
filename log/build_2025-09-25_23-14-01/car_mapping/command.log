@@ -1,4 +1,0 @@
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_mapping': /usr/bin/cmake --build /home/zzz/ros2_car/ros2/build/car_mapping -- -j12 -l12
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_mapping' returned '0': /usr/bin/cmake --build /home/zzz/ros2_car/ros2/build/car_mapping -- -j12 -l12
-Invoking command in '/home/zzz/ros2_car/ros2/build/car_mapping': /usr/bin/cmake --install /home/zzz/ros2_car/ros2/build/car_mapping
-Invoked command in '/home/zzz/ros2_car/ros2/build/car_mapping' returned '0': /usr/bin/cmake --install /home/zzz/ros2_car/ros2/build/car_mapping

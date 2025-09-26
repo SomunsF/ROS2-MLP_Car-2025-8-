@@ -1,9 +1,0 @@
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/uninstall.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/car_mapping_uninstall.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/test.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/edit_cache.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/rebuild_cache.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/list_install_components.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/install.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/install/local.dir
-/home/zzz/ros2_car/ros2/build/car_mapping/CMakeFiles/install/strip.dir

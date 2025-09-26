@@ -1,7 +1,0 @@
-[01m[K/home/zzz/ros2_car/ros2/src/car_nav/planner_config/plan.cpp:[m[K In member function ‘[01m[Kvirtual geometry_msgs::msg::TwistStamped zzzplan::EndToEndController::computeVelocityCommands(const PoseStamped&, const Twist&, nav2_core::GoalChecker*)[m[K’:
-[01m[K/home/zzz/ros2_car/ros2/src/car_nav/planner_config/plan.cpp:79:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   79 |   [01;35m[Kconst geometry_msgs::msg::Twist & velocity[m[K,
-      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
-[01m[K/home/zzz/ros2_car/ros2/src/car_nav/planner_config/plan.cpp:80:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_checker[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   80 |   [01;35m[Knav2_core::GoalChecker * goal_checker[m[K)
-      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
