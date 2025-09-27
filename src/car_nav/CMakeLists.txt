@@ -35,11 +35,11 @@ set(TORCH_LIB_DIR ~/libtorch/lib)
 link_directories(${TORCH_LIB_DIR})
 # ===== 插件库 =====
 add_library(zzzplan SHARED
-  planner_config/plan.cpp
+  end_to_end_config/plan.cpp
 )
 
 target_include_directories(zzzplan PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/planner_config>
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/end_to_end_config>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
 ) 
 
@@ -68,7 +68,7 @@ set_target_properties(zzzplan PROPERTIES
   INSTALL_RPATH_USE_LINK_PATH TRUE
 )
 # 导出插件（必需）
-pluginlib_export_plugin_description_file(nav2_core planner_config/plan.xml)
+pluginlib_export_plugin_description_file(nav2_core end_to_end_config/plan.xml)
 
 # ===== 安装：库与头文件 =====
 install(TARGETS zzzplan
@@ -77,15 +77,15 @@ install(TARGETS zzzplan
   RUNTIME DESTINATION bin
 )
 
-# 把 plan.hpp 装到 include/car_nav/planner_config/
-install(FILES planner_config/plan.hpp
-  DESTINATION include/${PROJECT_NAME}/planner_config
+# 把 plan.hpp 装到 include/car_nav/end_to_end_config/
+install(FILES end_to_end_config/plan.hpp
+  DESTINATION include/${PROJECT_NAME}/end_to_end_config
 )
 
 # XML 文件会被 pluginlib_export_plugin_description_file 安装，
 # 这里可选再安装一份到 share 下
-install(FILES planner_config/plan.xml
-  DESTINATION share/${PROJECT_NAME}/planner_config
+install(FILES end_to_end_config/plan.xml
+  DESTINATION share/${PROJECT_NAME}/end_to_end_config
 )
 
 # ===== 安装：资源（按你的包结构调整）=====

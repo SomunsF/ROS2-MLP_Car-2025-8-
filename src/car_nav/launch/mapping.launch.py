@@ -177,11 +177,10 @@ def generate_launch_description():
         name='bt_navigator',
         output='screen',
         parameters=[{
-            'use_sim_time': False,
-            'default_bt_xml_filename': '/home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/study_bt_navigator.xml',
-            'default_nav_to_pose_bt_xml': '/home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/study_bt_navigator.xml',
-            'default_nav_through_poses_bt_xml': '/home/zzz/ros2_car/ros2/install/car_nav/share/car_nav/config/study_bt_navigator.xml'
-        }, params_file]
+            'default_bt_xml_filename': get_package_share_directory('car_nav') + '/config/study_bt_navigator.xml',
+            'default_nav_to_pose_bt_xml': get_package_share_directory('car_nav') + '/config/study_bt_navigator.xml',
+            'default_nav_through_poses_bt_xml': get_package_share_directory('car_nav') + '/config/study_bt_navigator.xml',
+            'use_sim_time': False}] 
     )
     
     # Waypoint Follower - 路径点跟随

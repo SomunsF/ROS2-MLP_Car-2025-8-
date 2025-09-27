@@ -42,7 +42,7 @@ TOPIC_ODOM = '/odometry/filtered'             # 里程计话题名称
 TOPIC_SCAN = '/scan'                          # 激光雷达话题名称
 TOPIC_IMU = '/imu'                            # IMU 话题名称
 TOPIC_CMD = '/cmd_vel'                        # 控制命令话题名称
-LOOKAHEAD_TIME_SEC = 1.0                      # 预测时间窗口（秒）
+LOOKAHEAD_TIME_SEC = 0.5                      # 预测时间窗口（秒）
 
 # =============================================================================
 # 2. 主处理函数

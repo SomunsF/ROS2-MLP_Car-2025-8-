@@ -1,0 +1,9 @@
+<library path="zzzplan">
+  <class name="zzzplan::EndToEndController"
+         type="zzzplan::EndToEndController"
+         base_class_type="nav2_core::Controller">
+    <description>
+      An end-to-end controller based on a PyTorch model.
+    </description>
+  </class>
+</library>

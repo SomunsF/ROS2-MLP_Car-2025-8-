@@ -16,7 +16,7 @@
         </RecoveryNode>
         <RecoveryNode number_of_retries="3" name="FollowPath">
           <!-- 使用Rotation Shim Controller自动处理预旋转+端到端控制 -->
-          <FollowPath path="{path}" controller_id="RotationShimController" server_timeout="1000"/>
+          <FollowPath path="{path}" controller_id="RotationShimController" />
           <ReactiveFallback name="FollowPathRecoveryFallback">
             <GoalUpdated/>
             <Sequence name="RecoveryActions">
